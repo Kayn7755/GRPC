@@ -20,7 +20,8 @@ using message::result;
 using message::command;
 using message::Grpc_test;
 
-
+// Grpc_test::Service 是 由 gRPC 自动生成的基类
+// Grpc_test是命名空间, Service是类
 class GrpcImpl final: public Grpc_test::Service
 {
 public:
