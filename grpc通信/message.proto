@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package message;
+
+service Grpc_test{
+  rpc _donig_fuc (command) returns (result) {}
+  rpc _donig_echo (command) returns (result) {}
+}
+
+
+
+message command {
+	int32  echo = 1;
+	int32 doing_fun1 = 2;
+	int32 doing_fun2 = 3;
+}
+
+message result {
+	int32  success = 1;
+	string error = 2;
+}
